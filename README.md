@@ -14,9 +14,9 @@ This repository documents the infrastructure and deployment pipeline for a high-
 
 ### Engineering Challenges & Solutions
 
-**Tenant Permission Constraints:** Encountered restricted Entra ID (Azure AD) privileges on an educational subscription that prevented the creation of standard Service Principals.
-**Security vs. Automation:** To bypass tenant blocks safely, I implemented a **Self-Hosted Runner** on a local private agent. This allowed for authenticated deployments without exposing the build environment to the public.
-**Public Portfolio Security:** Adhered to a **Zero-Trust model** by utilizing a Private-Public split. Sensitive deployment logic and CI/CD runners are kept in a private repository, while this infrastructure map serves as a public-facing audit of the work. 
+* **Tenant Permission Constraints:** Encountered restricted Entra ID (Azure AD) privileges on an educational subscription that prevented the creation of standard Service Principals.
+* **Security vs. Automation:** To bypass tenant blocks safely, I implemented a **Self-Hosted Runner** on a local private agent. This allowed for authenticated deployments without exposing the build environment to the public.
+* **Public Portfolio Security:** Adhered to a **Zero-Trust model** by utilizing a Private-Public split. Sensitive deployment logic and CI/CD runners are kept in a private repository, while this infrastructure map serves as a public-facing audit of the work. 
 
 ---
 
